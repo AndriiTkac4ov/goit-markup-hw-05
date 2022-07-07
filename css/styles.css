@@ -640,6 +640,7 @@ img {
 }
 
 .backdrop.is-hidden {
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
@@ -666,7 +667,6 @@ img {
     align-items: center;
     width: 30px;
     height: 30px;
-    padding: 6px;
     margin-left: auto;
     
     border-radius: 50%;
