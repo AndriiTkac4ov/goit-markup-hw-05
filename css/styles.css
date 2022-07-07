@@ -12,6 +12,7 @@
     --location-text-color: #FFFFFF;
     --address-text-color: rgba(255, 255, 255, 0.6);
     --filter-accent-color: #FFFFFF;
+    --portfolio-overlay-text-color: #FFFFFF;
 
     /* background colors */
     --primary-bcg-color: #FFFFFF;
@@ -602,7 +603,7 @@ img {
     list-style: none;
 }
 
-.portfolio-works .item {
+.portfolio-works > .item {
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -651,6 +652,35 @@ img {
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+.portfolio-image {
+    position: relative;
+}
+
+.portfolio-image::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    opacity: 0;
+}
+
+.portfolio-link:hover .portfolio-image::before {
+    opacity: 1;
+}
+
+.portfolio-overlay-text {
+    font-size: 18px;
+    line-height: 1.556; 
+    text-align: left;
+    color: var(--portfolio-overlay-text-color);
 }
 
 /* Hero modal window */
