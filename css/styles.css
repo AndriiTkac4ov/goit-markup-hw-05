@@ -676,6 +676,16 @@ img {
     opacity: 1;
 }
 
+.portfolio-overlay {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
 .portfolio-overlay-text {
     font-size: 18px;
     line-height: 1.556; 
